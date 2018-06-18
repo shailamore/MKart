@@ -639,37 +639,11 @@
           <Column val="1"/>
           <Order val="A"/>
         </Segment>
-      </Segments>
-    </Index>
-    <Index id="2" name="Category_Master_Sub1_cate__key">
-      <Mode val="S"/>
-      <Order val="T"/>
-      <Range val="Q"/>
-      <IndexType val="R"/>
-      <PhysicalName val="Category_Master_Sub1_cate__key"/>
-      <HasHint val="Y"/>
-      <Clustered val="N"/>
-      <DropOnReindex val="N"/>
-      <Primary val="N"/>
-      <Segments>
         <Segment>
           <Size val="5"/>
           <Column val="2"/>
           <Order val="A"/>
         </Segment>
-      </Segments>
-    </Index>
-    <Index id="3" name="Category_Master_Sub2_cate_key">
-      <Mode val="S"/>
-      <Order val="T"/>
-      <Range val="Q"/>
-      <IndexType val="R"/>
-      <PhysicalName val="Category_Master_Sub2_cate_key"/>
-      <HasHint val="Y"/>
-      <Clustered val="N"/>
-      <DropOnReindex val="N"/>
-      <Primary val="N"/>
-      <Segments>
         <Segment>
           <Size val="5"/>
           <Column val="3"/>
