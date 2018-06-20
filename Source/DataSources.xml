@@ -8,7 +8,7 @@
 
   <Exe comp="-1"/>
 
-  <LastIsn val="31"/>
+  <LastIsn val="35"/>
 
   <LastIsnFolder val="0"/>
 
@@ -17,6 +17,7 @@
 </Header>
  <DataSourceRepository>
   <DataObjects>
+ 
  
  
 <DataObject PhysicalName="User_Master" Resident="N" UniqueISNConvState="12" data_source="MCart" id="1" name="User Master">
@@ -288,6 +289,18 @@
         <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
+    <Column id="10" name="Sub1_castegory_id">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="5"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="5"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Sub1_castegory_id"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Sub1_castegory_id" PIC_U="5" Size="5" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
     <Column id="4" name="Sub2_castegory_id">
       <PropertyList model="FIELD">
         <Model attr_obj="FIELD_ALPHA" id="1"/>
@@ -424,13 +437,19 @@
 
   <ForeignKeys>
     <Key name="Product_Master_Cate_id_foreign">
-      <Create val="N"/>
+      <Create val="Y"/>
       <ReferencedTable comp="-1" obj="4"/>
       <PrimaryKey val="1"/>
       <Segments>
         <Segment>
           <Size val="5"/>
           <Column val="3"/>
+        </Segment>
+        <Segment>
+          <Column val="10"/>
+        </Segment>
+        <Segment>
+          <Column val="4"/>
         </Segment>
       </Segments>
     </Key>
@@ -632,7 +651,7 @@
       <HasHint val="Y"/>
       <Clustered val="N"/>
       <DropOnReindex val="N"/>
-      <Primary val="N"/>
+      <Primary val="Y"/>
       <Segments>
         <Segment>
           <Size val="5"/>
@@ -1264,33 +1283,33 @@
     </Column>
     <Column id="2" name="Sub1_Category_id">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
         <Picture id="157" valUnicode="5"/>
-        <StoredAs id="173" val="4"/>
-        <Size id="174" val="4"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="5"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="Sub1_Category_id"/>
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="Sub1_Category_id" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldPhysical Name="Sub1_Category_id" PIC_U="5" Size="5" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
     <Column id="3" name="Sub2_Category_id">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
         <Picture id="157" valUnicode="5"/>
-        <StoredAs id="173" val="4"/>
-        <Size id="174" val="4"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="5"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="Sub2_Category_id"/>
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="Sub2_Category_id" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldPhysical Name="Sub2_Category_id" PIC_U="5" Size="5" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
@@ -1386,7 +1405,7 @@
       <HasHint val="Y"/>
       <Clustered val="N"/>
       <DropOnReindex val="N"/>
-      <Primary val="N"/>
+      <Primary val="Y"/>
       <Segments>
         <Segment>
           <Size val="5"/>
@@ -1399,13 +1418,18 @@
 
   <ForeignKeys>
     <Key name="Appearal_spec_Cate_id_foreignk">
-      <Create val="N"/>
+      <Create val="Y"/>
       <ReferencedTable comp="-1" obj="4"/>
       <PrimaryKey val="1"/>
       <Segments>
         <Segment>
-          <Size val="5"/>
           <Column val="1"/>
+        </Segment>
+        <Segment>
+          <Column val="2"/>
+        </Segment>
+        <Segment>
+          <Column val="3"/>
         </Segment>
       </Segments>
     </Key>
