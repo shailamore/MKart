@@ -8,7 +8,7 @@
 
   <Exe comp="-1"/>
 
-  <LastIsn val="35"/>
+  <LastIsn val="36"/>
 
   <LastIsnFolder val="0"/>
 
@@ -17,8 +17,6 @@
 </Header>
  <DataSourceRepository>
   <DataObjects>
- 
- 
  
 <DataObject PhysicalName="User_Master" Resident="N" UniqueISNConvState="12" data_source="MCart" id="1" name="User Master">
 
@@ -186,11 +184,24 @@
     <Column id="13" name="Image">
       <PropertyList model="FIELD">
         <Model attr_obj="FIELD_BLOB" id="1"/>
+        <StoredAs id="173" val="29"/>
         <Size id="174" val="28"/>
         <Definition id="175" val="1"/>
         <DbColumnName id="178" val="Image"/>
         <_Flip id="194"/>
         <_FieldPhysical Name="Image" Size="28" allowed_null="Y" attribute="O" context_cookies="Y" database_definition="1" id="231" storage="29"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="14" name="IsUserAdmin">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="IsUser"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="IsUser" PIC_U="5" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
