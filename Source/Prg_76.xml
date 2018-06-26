@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736870" _time="65767" date="25/06/2018" time="18:16:07"/>
+          <LastModified _date="736871" _time="61144" date="26/06/2018" time="16:59:04"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -493,7 +493,7 @@
                 <RaiseEvent id="234">
                   <EventType val="U"/>
                   <Parent val="32768"/>
-                  <PublicObject comp="-1"/>
+                  <PublicObject comp="-1" obj="3"/>
                 </RaiseEvent>
               </PropertyList>
             </Control>
