@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736870" _time="62658" date="25/06/2018" time="17:24:18"/>
+          <LastModified _date="736871" _time="61275" date="26/06/2018" time="17:01:15"/>
         </Header>
         <ItemIsn val="1"/>
         <Resource>
@@ -146,7 +146,7 @@
             <Event>
               <EventType val="U"/>
               <Parent val="32768"/>
-              <PublicObject comp="-1"/>
+              <PublicObject comp="-1" obj="1"/>
             </Event>
             <ExecuteOn_ val="O"/>
           </LogicUnit>
@@ -160,7 +160,7 @@
             <Event>
               <EventType val="U"/>
               <Parent val="32768"/>
-              <PublicObject comp="-1"/>
+              <PublicObject comp="-1" obj="2"/>
             </Event>
             <ExecuteOn_ val="O"/>
           </LogicUnit>
@@ -193,7 +193,7 @@
                 <RaiseEvent id="234">
                   <EventType val="U"/>
                   <Parent val="32768"/>
-                  <PublicObject comp="-1"/>
+                  <PublicObject comp="-1" obj="1"/>
                 </RaiseEvent>
                 <TabOrder id="314" val="2"/>
               </PropertyList>
@@ -209,7 +209,7 @@
                 <RaiseEvent id="234">
                   <EventType val="U"/>
                   <Parent val="32768"/>
-                  <PublicObject comp="-1"/>
+                  <PublicObject comp="-1" obj="2"/>
                 </RaiseEvent>
                 <TabOrder id="314" val="3"/>
               </PropertyList>
@@ -249,7 +249,7 @@
         </TaskForms>
         <Expressions>
           <Expression id="1">
-            <ExpSyntax val="'Welcome : '&amp;IF({32768,13},Trim(B),'Login')"/>
+            <ExpSyntax val="'Welcome : '&amp;IF({32768,13},Trim({32768,2}),'Login')"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
