@@ -18,6 +18,14 @@
       <ExposeComment val="N"/>
       <ProjectName val="MCart"/>
     </ProjectData>
+    <WebClientData>
+      <OutputFolder val=".\output"/>
+      <SourceImagesFolder val=".\images"/>
+      <Theme val="Material Design Exposed Functionality"/>
+      <GenerateMetadataOnly val="N"/>
+      <MultiLingualSupport val="N"/>
+      <StartupProgramISN val="64"/>
+    </WebClientData>
   </ProjectProperties>
 
 </Application>
