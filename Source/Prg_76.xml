@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736871" _time="61144" date="26/06/2018" time="16:59:04"/>
+          <LastModified _date="736871" _time="65916" date="26/06/2018" time="18:18:36"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -81,7 +81,7 @@
           <ForceRecordDelete DEL="N"/>
           <EndTaskCondition val="N"/>
           <EvaluateEndCondition val="B"/>
-          <InitialMode val="E"/>
+          <InitialMode val="M"/>
           <Locate Direction="A"/>
           <Range Direction="A"/>
           <VarRange/>
