@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="SignUP" ISN_2="1" LastIsn="1" id="71">
-          <Public val="WC1"/>
+          <Public val="WC11"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736871" _time="60593" date="26/06/2018" time="16:49:53"/>
+          <LastModified _date="736872" _time="60192" date="27/06/2018" time="16:43:12"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
