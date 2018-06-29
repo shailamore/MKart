@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736872" _time="63342" date="27/06/2018" time="17:35:42"/>
+          <LastModified _date="736873" _time="62936" date="28/06/2018" time="17:28:56"/>
         </Header>
         <ItemIsn val="16"/>
         <Resource>
@@ -336,6 +336,39 @@
                 </STP>
               </LogicLine>
               <LogicLine>
+                <Update FlowIsn="112">
+                  <FieldID val="4"/>
+                  <WithValue val="1"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="113">
+                  <FieldID val="10"/>
+                  <WithValue val="1"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="114">
+                  <FieldID val="6"/>
+                  <WithValue val="1"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
                 <CallTask FlowIsn="92">
                   <OperationType val="P"/>
                   <Event>
@@ -586,7 +619,7 @@
                 <Height id="24" val="20"/>
                 <Data FieldID="10" id="43"/>
                 <ControlName id="46" val="Email"/>
-                <MustInput id="52"/>
+                <MustInput id="52" val="Y"/>
                 <Tooltip Exp="7" id="56"/>
               </PropertyList>
             </Control>
@@ -601,7 +634,7 @@
                 <Height id="24" val="20"/>
                 <Data FieldID="6" id="43"/>
                 <ControlName id="46" val="Password"/>
-                <MustInput id="52"/>
+                <MustInput id="52" val="Y"/>
                 <Tooltip Exp="8" id="56"/>
                 <PasswordEdit id="85" val="Y"/>
               </PropertyList>
