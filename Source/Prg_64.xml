@@ -31,13 +31,13 @@
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
           <ToBeMigrated val="Y"/>
-          <LastModified _date="736866" _time="68161" date="21/06/2018" time="18:56:01"/>
+          <LastModified _date="736874" _time="42137" date="29/06/2018" time="11:42:17"/>
         </Header>
-        <ItemIsn val="18"/>
+        <ItemIsn val="20"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="1"/>
-            <Access val="R"/>
+            <Access val="W"/>
             <Share val="W"/>
             <Open val="N"/>
             <Cache val="Y"/>
@@ -371,7 +371,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="7"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -384,7 +384,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="7"/>
+                  <_DitIndexForToolkit val="8"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -690,13 +690,13 @@
                 </Evaluate>
               </LogicLine>
               <LogicLine>
-                <Remark FlowIsn="41">
+                <END_BLK FlowIsn="42"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="59">
                   <Type val="2"/>
                   <Text val=" "/>
                 </Remark>
-              </LogicLine>
-              <LogicLine>
-                <END_BLK FlowIsn="42"/>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -726,7 +726,6 @@
               <PublicObject comp="-1"/>
             </Event>
             <TXT val="Cancel"/>
-            <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
@@ -812,7 +811,6 @@
               <InternalEventID val="594"/>
               <PublicObject comp="-1"/>
             </Event>
-            <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
@@ -842,6 +840,10 @@
               <LogicLine>
                 <CallTask FlowIsn="54">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
                   <TaskID comp="-1" obj="65"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -856,6 +858,10 @@
               <LogicLine>
                 <CallTask FlowIsn="55">
                   <OperationType val="P"/>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
                   <TaskID comp="-1" obj="66"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -869,14 +875,76 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="7" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="T"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="34"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="ForgotPassword"/>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="56">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="S"/>
+                    <KeyCombinationID val="61"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="79"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="8" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <KeyCombinationID val="61"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <Evaluate FlowIsn="74">
+                  <Expression val="1"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="8" _last_test_id="24" id="1">
+          <FormEntry _last_isn="14" _last_test_id="30" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <X id="21"/>
               <Y id="22"/>
-              <Width id="23" val="745"/>
-              <Height id="24" val="587"/>
+              <Width id="23" val="414"/>
+              <Height id="24" val="179"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <StartupPosition id="275" val="5"/>
@@ -890,8 +958,8 @@
                 <Text id="19" valUnicode=" Logon Parameters"/>
                 <X id="21" val="9"/>
                 <Y id="22" val="5"/>
-                <Width id="23" val="331"/>
-                <Height id="24" val="132"/>
+                <Width id="23" val="377"/>
+                <Height id="24" val="115"/>
                 <ControlName id="46" val="Group1"/>
               </PropertyList>
             </Control>
@@ -943,6 +1011,22 @@
                 <AllowParking id="315" val="Y"/>
               </PropertyList>
             </Control>
+            <Control ISN_FATHER="1" _test_id="26" id="10">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="15"/>
+                <Y id="22" val="84"/>
+                <Width id="23" val="360"/>
+                <Height id="24" val="20"/>
+                <ControlName id="46" val="ForgotPassword"/>
+                <Format id="82" valUnicode="Forgot Password ? Click Here"/>
+                <ButtonStyle id="96" val="3"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="34"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
             <Control PDOD="128" _test_id="6" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="175"/>
@@ -977,20 +1061,6 @@
                 </RaiseEvent>
                 <TabOrder id="314" val="5"/>
                 <AllowParking id="315" val="Y"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="8" id="8">
-              <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
-                <X id="21" val="9"/>
-                <Y id="22" val="202"/>
-                <Width id="23" val="700"/>
-                <Height id="24" val="351"/>
-                <ControlName id="46" val="Subform8"/>
-                <Arguments id="126"/>
-                <ConnectTo id="156" val="4"/>
-                <AutomaticRefresh id="312"/>
-                <IsRouterOutlet id="707" val="Y"/>
-                <DefaultOutlet id="712" val="Y"/>
               </PropertyList>
             </Control>
           </FormEntry>
